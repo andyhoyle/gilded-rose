@@ -548,6 +548,120 @@ this.ScenarioInitialize(scenarioInfo);
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Sulfura can only have quality of 80")]
+        public void SulfuraCanOnlyHaveQualityOf80()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sulfura can only have quality of 80", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 94
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "SellIn",
+                            "Quality"});
+                table13.AddRow(new string[] {
+                            "Sulfuras, Hand of Ragnaros",
+                            "5",
+                            "4"});
+#line 95
+    testRunner.Given("a list of items in stock:", ((string)(null)), table13, "Given ");
+#line hidden
+#line 98
+    testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 99
+    testRunner.Then("the quality of the item \"Sulfuras, Hand of Ragnaros\" should be 80", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Conjured items degrade in quality twice as fast as normal items")]
+        public void ConjuredItemsDegradeInQualityTwiceAsFastAsNormalItems()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Conjured items degrade in quality twice as fast as normal items", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 101
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "SellIn",
+                            "Quality"});
+                table14.AddRow(new string[] {
+                            "Conjured Mana Cake",
+                            "5",
+                            "5"});
+#line 102
+    testRunner.Given("a list of items in stock:", ((string)(null)), table14, "Given ");
+#line hidden
+#line 105
+    testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 106
+    testRunner.Then("the quality of the item \"Conjured Mana Cake\" should be 3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Conjured items cannot have quality less than zero")]
+        public void ConjuredItemsCannotHaveQualityLessThanZero()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Conjured items cannot have quality less than zero", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 108
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "SellIn",
+                            "Quality"});
+                table15.AddRow(new string[] {
+                            "Conjured Mana Cake",
+                            "1",
+                            "5"});
+#line 109
+    testRunner.Given("a list of items in stock:", ((string)(null)), table15, "Given ");
+#line hidden
+#line 112
+    testRunner.When("2 days have elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 113
+    testRunner.Then("the quality of the item \"Conjured Mana Cake\" should be 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

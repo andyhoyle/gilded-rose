@@ -91,3 +91,23 @@ Scenario: BSP Quality increases by 3 when there are 5 days or less
     When a single day has elapsed
     Then the quality of the item "Backstage passes to a TAFKAL80ETC concert" should be 7
 
+Scenario: Sulfura can only have quality of 80
+    Given a list of items in stock:
+	| Name                                      | SellIn | Quality |
+	| Sulfuras, Hand of Ragnaros | 5      | 4       |
+    When a single day has elapsed
+    Then the quality of the item "Sulfuras, Hand of Ragnaros" should be 80
+
+Scenario: Conjured items degrade in quality twice as fast as normal items
+    Given a list of items in stock:
+	| Name               | SellIn | Quality |
+	| Conjured Mana Cake | 5      | 5       |
+    When a single day has elapsed
+    Then the quality of the item "Conjured Mana Cake" should be 3
+
+Scenario: Conjured items cannot have quality less than zero
+    Given a list of items in stock:
+	| Name               | SellIn | Quality |
+	| Conjured Mana Cake | 1      | 5       |
+    When 2 days have elapsed
+    Then the quality of the item "Conjured Mana Cake" should be 0
