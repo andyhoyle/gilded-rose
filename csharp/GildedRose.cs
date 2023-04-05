@@ -4,10 +4,10 @@ namespace csharp
 {
     public class GildedRose
     {
-        public const string AGED_BRIE = "Aged Brie";
-        public const string BACKSTAGE_PASS = "Backstage passes to a TAFKAL80ETC concert";
-        public const string SULFURAS = "Sulfuras, Hand of Ragnaros";
-        public const string CONJURED = "Conjured Mana Cake";
+        public static string AGED_BRIE = "Aged Brie";
+        public static string BACKSTAGE_PASS = "Backstage passes to a TAFKAL80ETC concert";
+        public static string SULFURAS = "Sulfuras, Hand of Ragnaros";
+        public static string CONJURED = "Conjured Mana Cake";
 
         IList<Item> Items;
 
@@ -40,6 +40,8 @@ namespace csharp
             if (quality < 50)
             {
                 quality++;
+                if (item.SellIn <= 0 && quality < 50) quality++;
+                if (quality > 50) quality = 50;
             }
 
             return quality;
@@ -52,8 +54,8 @@ namespace csharp
             if (quality < 50)
             {
                 quality++;
-                if (item.SellIn <= 10 && item.Quality < 50) quality++;
-                if (item.SellIn <= 5 && item.Quality < 50) quality++;
+                if (item.SellIn <= 10 && quality < 50) quality++;
+                if (item.SellIn <= 5 && quality < 50) quality++;
             }
 
             if (item.SellIn <= 0)

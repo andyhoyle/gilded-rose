@@ -358,14 +358,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("\"Backstage passes\", like aged brie, increases in Quality as its SellIn value appr" +
-            "oaches;")]
-        public void BackstagePassesLikeAgedBrieIncreasesInQualityAsItsSellInValueApproaches()
+        [NUnit.Framework.DescriptionAttribute("\"Aged Brie\" actually increases in Quality the older it gets but also doubles afte" +
+            "r sell in date")]
+        public void AgedBrieActuallyIncreasesInQualityTheOlderItGetsButAlsoDoublesAfterSellInDate()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("\"Backstage passes\", like aged brie, increases in Quality as its SellIn value appr" +
-                    "oaches;", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("\"Aged Brie\" actually increases in Quality the older it gets but also doubles afte" +
+                    "r sell in date", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 59
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -381,8 +381,8 @@ this.ScenarioInitialize(scenarioInfo);
                             "SellIn",
                             "Quality"});
                 table8.AddRow(new string[] {
-                            "Backstage passes to a TAFKAL80ETC concert",
-                            "25",
+                            "Aged Brie",
+                            "0",
                             "4"});
 #line 60
     testRunner.Given("a list of items in stock:", ((string)(null)), table8, "Given ");
@@ -391,19 +391,21 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 64
-    testRunner.Then("the quality of the item \"Backstage passes to a TAFKAL80ETC concert\" should be 5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("the quality of the item \"Aged Brie\" should be 6", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Aged Brie Max Quality 50")]
-        public void AgedBrieMaxQuality50()
+        [NUnit.Framework.DescriptionAttribute("\"Aged Brie\" actually increases in Quality the older it gets but also doubles afte" +
+            "r sell in date but cannot exceed 50")]
+        public void AgedBrieActuallyIncreasesInQualityTheOlderItGetsButAlsoDoublesAfterSellInDateButCannotExceed50()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Aged Brie Max Quality 50", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("\"Aged Brie\" actually increases in Quality the older it gets but also doubles afte" +
+                    "r sell in date but cannot exceed 50", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 66
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -420,8 +422,8 @@ this.ScenarioInitialize(scenarioInfo);
                             "Quality"});
                 table9.AddRow(new string[] {
                             "Aged Brie",
-                            "5",
-                            "50"});
+                            "0",
+                            "49"});
 #line 67
     testRunner.Given("a list of items in stock:", ((string)(null)), table9, "Given ");
 #line hidden
@@ -436,12 +438,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("BSP Max Quality 50")]
-        public void BSPMaxQuality50()
+        [NUnit.Framework.DescriptionAttribute("\"Backstage passes\", like aged brie, increases in Quality as its SellIn value appr" +
+            "oaches;")]
+        public void BackstagePassesLikeAgedBrieIncreasesInQualityAsItsSellInValueApproaches()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BSP Max Quality 50", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("\"Backstage passes\", like aged brie, increases in Quality as its SellIn value appr" +
+                    "oaches;", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 73
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -458,8 +462,8 @@ this.ScenarioInitialize(scenarioInfo);
                             "Quality"});
                 table10.AddRow(new string[] {
                             "Backstage passes to a TAFKAL80ETC concert",
-                            "5",
-                            "50"});
+                            "25",
+                            "4"});
 #line 74
     testRunner.Given("a list of items in stock:", ((string)(null)), table10, "Given ");
 #line hidden
@@ -467,19 +471,19 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 78
-    testRunner.Then("the quality of the item \"Backstage passes to a TAFKAL80ETC concert\" should be 50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("the quality of the item \"Backstage passes to a TAFKAL80ETC concert\" should be 5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("BSP Quality increases by 2 when there are 10 days or less")]
-        public void BSPQualityIncreasesBy2WhenThereAre10DaysOrLess()
+        [NUnit.Framework.DescriptionAttribute("Aged Brie Max Quality 50")]
+        public void AgedBrieMaxQuality50()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BSP Quality increases by 2 when there are 10 days or less", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Aged Brie Max Quality 50", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 80
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -495,9 +499,9 @@ this.ScenarioInitialize(scenarioInfo);
                             "SellIn",
                             "Quality"});
                 table11.AddRow(new string[] {
-                            "Backstage passes to a TAFKAL80ETC concert",
-                            "9",
-                            "4"});
+                            "Aged Brie",
+                            "5",
+                            "50"});
 #line 81
     testRunner.Given("a list of items in stock:", ((string)(null)), table11, "Given ");
 #line hidden
@@ -505,19 +509,19 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 85
-    testRunner.Then("the quality of the item \"Backstage passes to a TAFKAL80ETC concert\" should be 6", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("the quality of the item \"Aged Brie\" should be 50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("BSP Quality increases by 3 when there are 5 days or less")]
-        public void BSPQualityIncreasesBy3WhenThereAre5DaysOrLess()
+        [NUnit.Framework.DescriptionAttribute("BSP Max Quality 50 normal time")]
+        public void BSPMaxQuality50NormalTime()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BSP Quality increases by 3 when there are 5 days or less", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BSP Max Quality 50 normal time", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 87
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -534,28 +538,28 @@ this.ScenarioInitialize(scenarioInfo);
                             "Quality"});
                 table12.AddRow(new string[] {
                             "Backstage passes to a TAFKAL80ETC concert",
-                            "4",
-                            "4"});
+                            "15",
+                            "49"});
 #line 88
     testRunner.Given("a list of items in stock:", ((string)(null)), table12, "Given ");
 #line hidden
 #line 91
-    testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("2 days have elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 92
-    testRunner.Then("the quality of the item \"Backstage passes to a TAFKAL80ETC concert\" should be 7", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("the quality of the item \"Backstage passes to a TAFKAL80ETC concert\" should be 50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Sulfura can only have quality of 80")]
-        public void SulfuraCanOnlyHaveQualityOf80()
+        [NUnit.Framework.DescriptionAttribute("BSP Max Quality 50 within 10 days")]
+        public void BSPMaxQuality50Within10Days()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sulfura can only have quality of 80", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BSP Max Quality 50 within 10 days", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 94
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -571,9 +575,9 @@ this.ScenarioInitialize(scenarioInfo);
                             "SellIn",
                             "Quality"});
                 table13.AddRow(new string[] {
-                            "Sulfuras, Hand of Ragnaros",
-                            "5",
-                            "4"});
+                            "Backstage passes to a TAFKAL80ETC concert",
+                            "9",
+                            "49"});
 #line 95
     testRunner.Given("a list of items in stock:", ((string)(null)), table13, "Given ");
 #line hidden
@@ -581,19 +585,19 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 99
-    testRunner.Then("the quality of the item \"Sulfuras, Hand of Ragnaros\" should be 80", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("the quality of the item \"Backstage passes to a TAFKAL80ETC concert\" should be 50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Conjured items degrade in quality twice as fast as normal items")]
-        public void ConjuredItemsDegradeInQualityTwiceAsFastAsNormalItems()
+        [NUnit.Framework.DescriptionAttribute("BSP Max Quality 50 within 5 days")]
+        public void BSPMaxQuality50Within5Days()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Conjured items degrade in quality twice as fast as normal items", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BSP Max Quality 50 within 5 days", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 101
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -609,9 +613,9 @@ this.ScenarioInitialize(scenarioInfo);
                             "SellIn",
                             "Quality"});
                 table14.AddRow(new string[] {
-                            "Conjured Mana Cake",
-                            "5",
-                            "5"});
+                            "Backstage passes to a TAFKAL80ETC concert",
+                            "4",
+                            "49"});
 #line 102
     testRunner.Given("a list of items in stock:", ((string)(null)), table14, "Given ");
 #line hidden
@@ -619,19 +623,19 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 106
-    testRunner.Then("the quality of the item \"Conjured Mana Cake\" should be 3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("the quality of the item \"Backstage passes to a TAFKAL80ETC concert\" should be 50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Conjured items cannot have quality less than zero")]
-        public void ConjuredItemsCannotHaveQualityLessThanZero()
+        [NUnit.Framework.DescriptionAttribute("BSP Quality increases by 2 when there are 10 days or less")]
+        public void BSPQualityIncreasesBy2WhenThereAre10DaysOrLess()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Conjured items cannot have quality less than zero", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BSP Quality increases by 2 when there are 10 days or less", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 108
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -647,16 +651,168 @@ this.ScenarioInitialize(scenarioInfo);
                             "SellIn",
                             "Quality"});
                 table15.AddRow(new string[] {
-                            "Conjured Mana Cake",
-                            "1",
-                            "5"});
+                            "Backstage passes to a TAFKAL80ETC concert",
+                            "9",
+                            "4"});
 #line 109
     testRunner.Given("a list of items in stock:", ((string)(null)), table15, "Given ");
 #line hidden
 #line 112
-    testRunner.When("2 days have elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 113
+    testRunner.Then("the quality of the item \"Backstage passes to a TAFKAL80ETC concert\" should be 6", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("BSP Quality increases by 3 when there are 5 days or less")]
+        public void BSPQualityIncreasesBy3WhenThereAre5DaysOrLess()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BSP Quality increases by 3 when there are 5 days or less", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 115
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "SellIn",
+                            "Quality"});
+                table16.AddRow(new string[] {
+                            "Backstage passes to a TAFKAL80ETC concert",
+                            "4",
+                            "4"});
+#line 116
+    testRunner.Given("a list of items in stock:", ((string)(null)), table16, "Given ");
+#line hidden
+#line 119
+    testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 120
+    testRunner.Then("the quality of the item \"Backstage passes to a TAFKAL80ETC concert\" should be 7", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Sulfura can only have quality of 80")]
+        public void SulfuraCanOnlyHaveQualityOf80()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sulfura can only have quality of 80", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 122
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "SellIn",
+                            "Quality"});
+                table17.AddRow(new string[] {
+                            "Sulfuras, Hand of Ragnaros",
+                            "5",
+                            "4"});
+#line 123
+    testRunner.Given("a list of items in stock:", ((string)(null)), table17, "Given ");
+#line hidden
+#line 126
+    testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 127
+    testRunner.Then("the quality of the item \"Sulfuras, Hand of Ragnaros\" should be 80", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Conjured items degrade in quality twice as fast as normal items")]
+        public void ConjuredItemsDegradeInQualityTwiceAsFastAsNormalItems()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Conjured items degrade in quality twice as fast as normal items", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 129
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "SellIn",
+                            "Quality"});
+                table18.AddRow(new string[] {
+                            "Conjured Mana Cake",
+                            "5",
+                            "5"});
+#line 130
+    testRunner.Given("a list of items in stock:", ((string)(null)), table18, "Given ");
+#line hidden
+#line 133
+    testRunner.When("a single day has elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 134
+    testRunner.Then("the quality of the item \"Conjured Mana Cake\" should be 3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Conjured items cannot have quality less than zero")]
+        public void ConjuredItemsCannotHaveQualityLessThanZero()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Conjured items cannot have quality less than zero", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 136
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Name",
+                            "SellIn",
+                            "Quality"});
+                table19.AddRow(new string[] {
+                            "Conjured Mana Cake",
+                            "1",
+                            "5"});
+#line 137
+    testRunner.Given("a list of items in stock:", ((string)(null)), table19, "Given ");
+#line hidden
+#line 140
+    testRunner.When("2 days have elapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 141
     testRunner.Then("the quality of the item \"Conjured Mana Cake\" should be 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
