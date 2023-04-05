@@ -4,10 +4,10 @@ namespace csharp
 {
     public class GildedRose
     {
-        public static string AGED_BRIE = "Aged Brie";
-        public static string BACKSTAGE_PASS = "Backstage passes to a TAFKAL80ETC concert";
-        public static string SULFURAS = "Sulfuras, Hand of Ragnaros";
-        public static string CONJURED = "Conjured Mana Cake";
+        public const string AGED_BRIE = "Aged Brie";
+        public const string BACKSTAGE_PASS = "Backstage passes to a TAFKAL80ETC concert";
+        public const string SULFURAS = "Sulfuras, Hand of Ragnaros";
+        public const string CONJURED = "Conjured Mana Cake";
 
         IList<Item> Items;
 
