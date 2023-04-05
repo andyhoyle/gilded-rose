@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace csharp
 {
@@ -10,6 +11,12 @@ namespace csharp
         public const string CONJURED = "Conjured Mana Cake";
 
         IList<Item> Items;
+
+        // To allow for local unit tests
+        internal GildedRose() 
+        { 
+            Items = new List<Item>();
+        }
 
         public GildedRose(IList<Item> Items)
         {
@@ -33,8 +40,10 @@ namespace csharp
             }
         }
 
-        private int BrieQuality(Item item)
+        internal int BrieQuality(Item item)
         {
+            if (item.Name != AGED_BRIE) throw new ArgumentException($"Cannot use this quality calculation with anything other than {AGED_BRIE}");
+
             int quality = item.Quality;
 
             if (quality < 50)
@@ -47,8 +56,10 @@ namespace csharp
             return quality;
         }
 
-        private int BackstagePassQuality(Item item)
+        internal int BackstagePassQuality(Item item)
         {
+            if (item.Name != BACKSTAGE_PASS) throw new ArgumentException($"Cannot use this quality calculation with anything other than {BACKSTAGE_PASS}");
+
             int quality = item.Quality;
 
             if (quality < 50)
@@ -66,7 +77,7 @@ namespace csharp
             return quality;
         }
 
-        private int StandardItemQuality(Item item)
+        internal int StandardItemQuality(Item item)
         {
             int quality = item.Quality;
 
@@ -79,8 +90,10 @@ namespace csharp
             return quality;
         }
 
-        private int ConjuredQuality(Item item)
+        internal int ConjuredQuality(Item item)
         {
+            if (item.Name != CONJURED) throw new ArgumentException($"Cannot use this quality calculation with anything other than {CONJURED}");
+
             int quality = item.Quality;
 
             if (quality > 0)
